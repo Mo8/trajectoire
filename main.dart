@@ -28,7 +28,7 @@ main(List<String> args) {
   final int stepMax = 10;
   final double realStep = 0.001;
   final sendPos = Stream.periodic(
-    const Duration(seconds: 1),
+    const Duration(seconds: 5),
     (computationCount) {
       if (stepLat < stepMax && stepLng == 0) {
         stepLat++;
